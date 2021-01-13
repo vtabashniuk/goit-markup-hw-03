@@ -1,0 +1,224 @@
+/* ======= COLOR PALETTE ======= */
+
+/* main text color:                         #757575; */
+/* secondary text color:                    #212121; */
+/* accent & first logo color:               #2196f3; */
+/* second logo color
+    on light background (black):            #000000; */
+/* primary background color &
+    second logo color on dark background &
+    text on dark background (white):        #ffffff; */
+/* secondary background color &
+    background color for modal-button:      #f5f4fa; */
+/* contacts color:                          rgba(255, 255, 255, 0.6); */
+
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --black: #000000;
+  --white: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --conacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  background: #ffffff;
+  color: var(--main-text-color);
+}
+
+/* ======= UTILITE CLASSES ======= */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.modal-button {
+  background: var(--accent-color);
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* ======= END UTILITE CLASSES ======= */
+
+/* ----------------------------------- */
+/* ~             STUDIO              ~ */
+/* ----------------------------------- */
+/* ======= HEADER ======= */
+/* === LOGO ===*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--accent-color);
+}
+
+.logo-second-part {
+  color: var(--black);
+}
+
+/* === NAVIGATION & CONTACTS === */
+.site-navigation .link {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.contacts .link {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.site-navigation .link:hover,
+.contacts .link:hover,
+.site-navigation .link:focus,
+.contacts .link:focus,
+.site-navigation .link:active {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ======= END HEADER ======= */
+
+/* ======= MAIN ======= */
+/* ======= HERO ======= */
+.hero {
+  background: #2f303a;
+}
+
+.hero .title {
+  font-weight: 900;
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* ======= OUR ADVANTAGES ======= */
+.advantages-list .title {
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: unset;
+  text-transform: uppercase;
+}
+/* ======= OUR JOB ======= */
+
+/* ======= OUR TEAM ======= */
+.team {
+  background: var(--secondary-background-color);
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+}
+
+.team-list p {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}
+
+/* ======= END MAIN ======= */
+
+/* ======= FOOTER ======= */
+.footer {
+  background: #2f303a;
+}
+
+/* === LOGO === */
+.footer .logo-second-part {
+  color: var(--white);
+}
+
+/* === ADDRESS === */
+.address {
+  font-style: normal;
+  line-height: 1.714;
+  color: var(--white);
+}
+
+/* === CONTACTS === */
+.footer .contacts .link {
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--conacts-color);
+}
+
+.footer .contacts .link:hover,
+.footer .contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* ======= END FOOTER ======= */
+/* ----------------------------------- */
+/* ~            END STUDIO           ~ */
+/* ----------------------------------- */
+
+/* ----------------------------------- */
+/* ~            PORTFOLIO            ~ */
+/* ----------------------------------- */
+/* ======= OUR PROJECTS ======= */
+.filter .modal-button {
+  background: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+}
+
+.filter .modal-button:hover,
+.filter .modal-button:focus,
+.filter .modal-button:active {
+  background: var(--accent-color);
+  color: var(--white);
+}
+
+.examples .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: unset;
+}
+
+.examples p {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+/* ======= END OUR PROJECTS ======= */
+/* ----------------------------------- */
+/* ~         END   PORTFOLIO         ~ */
+/* ----------------------------------- */
