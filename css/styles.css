@@ -34,6 +34,17 @@ body {
 }
 
 /* ======= UTILITE CLASSES ======= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -67,8 +78,34 @@ body {
 /* ~             STUDIO              ~ */
 /* ----------------------------------- */
 /* ======= HEADER ======= */
+header {
+  background: yellow;
+}
+.header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+}
 /* === LOGO ===*/
 .logo {
+  margin-right: 92px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -81,12 +118,21 @@ body {
 }
 
 /* === NAVIGATION & CONTACTS === */
+.site-navigation > .items:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-navigation .link {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+
+.contacts > .items:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts .link {
   font-weight: 500;
   line-height: 1.143;
