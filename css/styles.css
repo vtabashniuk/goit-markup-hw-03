@@ -41,6 +41,13 @@ body {
   padding: 0;
 }
 
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 img {
   display: block;
 }
@@ -78,17 +85,10 @@ img {
 /* ~             STUDIO              ~ */
 /* ----------------------------------- */
 /* ======= HEADER ======= */
-header {
-  background: yellow;
-}
 .header-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
-  outline: 2px solid red;
 }
 
 .nav-container {
@@ -106,6 +106,7 @@ header {
 /* === LOGO ===*/
 .logo {
   margin-right: 92px;
+  padding: 25px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -122,18 +123,22 @@ header {
   margin-right: 50px;
 }
 
+.contacts > .items:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-navigation .link {
+  display: inline-block;
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
-.contacts > .items:not(:last-child) {
-  margin-right: 50px;
-}
-
 .contacts .link {
+  display: inline-block;
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
