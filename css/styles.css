@@ -178,10 +178,12 @@ img {
 }
 
 .hero-container > .modal-button {
+  display: block;
   min-width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-left: 248px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px 32px;
 }
 
