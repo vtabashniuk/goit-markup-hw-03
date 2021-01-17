@@ -41,13 +41,6 @@ body {
   padding: 0;
 }
 
-.container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 img {
   display: block;
 }
@@ -86,6 +79,10 @@ img {
 /* ----------------------------------- */
 /* ======= HEADER ======= */
 .header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
   height: 80px;
   justify-content: space-between;
   align-items: center;
@@ -128,7 +125,7 @@ img {
 }
 
 .site-navigation .link {
-  display: inline-block;
+  display: block;
   padding: 32px 0;
   font-weight: 500;
   line-height: 1.143;
@@ -137,7 +134,7 @@ img {
 }
 
 .contacts .link {
-  display: inline-block;
+  display: block;
   padding: 32px 0;
   font-weight: 500;
   line-height: 1.143;
@@ -162,12 +159,15 @@ img {
 /* ======= HERO ======= */
 .hero {
   background: #2f303a;
+}
+
+.hero-container {
+  width: 696px;
+  margin: 0 auto;
   padding: 200px 0;
 }
 
 .hero .title {
-  padding-bottom: 30px;
-  width: 696px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
@@ -177,11 +177,11 @@ img {
   color: var(--white);
 }
 
-.hero > .modal-button {
-  display: block;
+.hero-container > .modal-button {
   min-width: 200px;
   height: 50px;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 248px;
   padding: 8px 32px;
 }
 
