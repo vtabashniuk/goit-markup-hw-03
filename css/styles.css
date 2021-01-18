@@ -356,7 +356,29 @@ img {
 /* ~            PORTFOLIO            ~ */
 /* ----------------------------------- */
 /* ======= OUR PROJECTS ======= */
+.portfolio-section {
+  padding: 94px 0;
+}
+
+.portfolio-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter > .items:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter .modal-button {
+  padding: 4px 22px;
+  height: 38px;
   background: var(--secondary-background-color);
   color: var(--secondary-text-color);
   font-weight: 500;
