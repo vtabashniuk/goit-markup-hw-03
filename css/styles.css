@@ -169,7 +169,7 @@ img {
 
 /* ======= MAIN ======= */
 /* ======= HERO ======= */
-.hero {
+.hero-section {
   background: #2f303a;
 }
 
@@ -179,7 +179,7 @@ img {
   padding: 200px 0;
 }
 
-.hero .title {
+.hero-container .title {
   margin: 0 auto 22px auto;
   font-weight: 900;
   font-size: 44px;
@@ -297,20 +297,45 @@ img {
   background: #2f303a;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 15px;
+}
+
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .contacts > .items:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 /* === LOGO === */
+.footer .logo {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .footer .logo-second-part {
   color: var(--white);
 }
 
 /* === ADDRESS === */
 .address {
+  margin-bottom: 10px;
   font-style: normal;
   line-height: 1.714;
   color: var(--white);
 }
 
 /* === CONTACTS === */
+
 .footer .contacts .link {
+  padding: 0;
   font-weight: 400;
   line-height: 1.714;
   letter-spacing: 0.03em;
