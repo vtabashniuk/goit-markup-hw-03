@@ -72,6 +72,17 @@ img {
   letter-spacing: 0.06em;
   border-radius: 4px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ======= END UTILITE CLASSES ======= */
 
 /* ----------------------------------- */
@@ -162,7 +173,7 @@ img {
 }
 
 .hero-container {
-  width: 696px;
+  width: 630px;
   margin: 0 auto;
   padding: 200px 0;
 }
@@ -188,7 +199,31 @@ img {
 }
 
 /* ======= OUR ADVANTAGES ======= */
+.advantages-section {
+  padding: 94px 0;
+}
+
+.advantages-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list > .items {
+  width: 270px;
+  height: 101px;
+}
+
+.advantages-list > .items:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-list .title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.143;
   text-align: unset;
