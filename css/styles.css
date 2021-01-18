@@ -54,6 +54,7 @@ img {
 }
 
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -179,7 +180,7 @@ img {
 }
 
 .hero .title {
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -192,7 +193,6 @@ img {
   display: block;
   min-width: 200px;
   height: 50px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 32px;
@@ -240,26 +240,51 @@ img {
   padding: 0 15px;
 }
 
+.job-container .title {
+  margin-bottom: 50px;
+}
+
 .job-list {
   display: flex;
-  margin-top: 50px;
 }
 
 .job-list > .items:not(:last-child) {
   margin-right: 30px;
 }
 /* ======= OUR TEAM ======= */
-.team {
+.team-section {
+  padding: 94px 0;
   background: var(--secondary-background-color);
 }
 
+.team-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list > .members:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list > .members {
+  padding-bottom: 30px;
+  background: var(--white);
+}
+
 .team-list .title {
+  margin: 30px auto 10px auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
 }
 
 .team-list p {
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
