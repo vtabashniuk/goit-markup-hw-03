@@ -230,7 +230,24 @@ img {
   text-transform: uppercase;
 }
 /* ======= OUR JOB ======= */
+.job-section {
+  padding-bottom: 94px;
+}
 
+.job-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.job-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.job-list > .items:not(:last-child) {
+  margin-right: 30px;
+}
 /* ======= OUR TEAM ======= */
 .team {
   background: var(--secondary-background-color);
