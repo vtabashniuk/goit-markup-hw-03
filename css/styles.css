@@ -395,11 +395,30 @@ img {
   color: var(--white);
 }
 
-.examples .title {
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples > .items {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.examples > .items:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.card-container {
+  padding: 20px 24px;
+}
+
+.card-container .title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: unset;
+  margin-bottom: 4px;
 }
 
 .examples p {
